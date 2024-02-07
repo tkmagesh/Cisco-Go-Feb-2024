@@ -72,3 +72,36 @@
 > go tool dist list
 ### Cross Compile
 > GOOS=[target_os] GOARCH=[target_process_arch] go build -o [binary_name] [program.go]
+
+## Data Types
+- bool
+- string
+- integer types
+    - int8
+    - int16
+    - int32
+    - int64
+    - int
+- unsigned integer types
+    - uint8
+    - uint16
+    - uint32
+    - uint64
+    - uint
+- float types
+    - float32
+    - float64
+- complex types
+    - complex64 (real[float32] + imaginary[float32])
+    - complex128 (real[float64] + imaginary[float64])
+- type aliases
+    - byte (alias for uint8)
+    - rune (alias for int32 / unicode code point)
+
+## Variables in Go
+- Function Scope
+    - Can use "var" & ":="
+    - CANNOT have unused variables
+- Package Scope
+    - CANNOT use ":="
+    - CAN have unused variables

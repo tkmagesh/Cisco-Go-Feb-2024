@@ -144,3 +144,7 @@
 - switch case
 - for
 - func
+
+## Functions
+- Functions can return more than one result
+- Anonymous functions

@@ -148,3 +148,7 @@
 ## Functions
 - Functions can return more than one result
 - Anonymous functions
+- Higher Order Functions
+    - Assign functions as values to variables
+    - Pass functions as arguments to other functions
+    - Return functions as return values from other functions

@@ -34,23 +34,32 @@ func main() {
 		fmt.Printf("Hi %s %s, Have a nice day!\n", firstName, lastName)
 	}
 	greetUser("Magesh", "Kuppan")
+
+	// function with 2 parameters & 1 return result
+	var getGreetMsg func(string, string) string
+	getGreetMsg = func(firstName, lastName string) string {
+		return fmt.Sprintf("Hi %s %s, Have a good day!\n", firstName, lastName)
+	}
+	msg := getGreetMsg("Suresh", "Kannan")
+	fmt.Print(msg)
+
+	// using named results
+	var divide func(int, int) (int, int)
+	divide = func(x, y int) (quotient int, remainder int) {
+		quotient = x / y
+		remainder = x % y
+		return
+	}
+	q, r := divide(100, 7)
+	fmt.Printf("quotient = %d, remainder = %d\n", q, r)
+
 	/*
 
 
 
 
-		// function with 2 parameters & 1 return result
-		msg := func(firstName, lastName string) string {
-			return fmt.Sprintf("Hi %s %s, Have a good day!\n", firstName, lastName)
-		}("Suresh", "Kannan")
-		fmt.Print(msg)
 
-		// using named results
-		q, r := func(x, y int) (quotient int, remainder int) {
-			quotient = x / y
-			remainder = x % y
-			return
-		}(100, 7)
-		fmt.Printf("quotient = %d, remainder = %d\n", q, r)
-	*/
+
+
+	 */
 }

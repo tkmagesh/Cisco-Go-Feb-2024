@@ -60,3 +60,15 @@
 ### Compile
 > go build [program.go]
 > go build -o [bindary_name] [program.go]
+### List the environment variables
+> go env
+> go env [var_1] [var_2] .....
+### Set the value of environment variables
+> go env -w [var_1 = value_1] [var_2 = value_2] ....
+### Environment Variables for Cross Compilation
+- GOARCH
+- GOOS
+### List the supported platforms for Cross Compilation
+> go tool dist list
+### Cross Compile
+> GOOS=[target_os] GOARCH=[target_process_arch] go build -o [binary_name] [program.go]

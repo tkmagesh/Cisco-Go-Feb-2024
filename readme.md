@@ -153,3 +153,7 @@
     - Pass functions as arguments to other functions
     - Return functions as return values from other functions
 - Variadic functions
+
+## Deferred Functions
+- functions whose execution is postponed (until the current function execution is completed)
+- prefix "defer" before the function call

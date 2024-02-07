@@ -61,6 +61,7 @@
     - No reference types (everything is a value type)
     - No pointer arithmatic
     - No implicit type conversion
+    - No function overloading
 - Close to hardware (performance)
     - Compiled to machine code
     - Different builds for different platforms

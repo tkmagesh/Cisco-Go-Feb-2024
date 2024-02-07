@@ -19,4 +19,7 @@ func main() {
 
 	// unused constant at function scope (allowed)
 	const x = 100
+
+	myVar := 100
+
 }

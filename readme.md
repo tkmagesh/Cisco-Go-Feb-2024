@@ -53,3 +53,10 @@
 
 ## Managed Concurrency in Go (Using Goroutines)
 ![image](./images/concurrency-managed.png)
+
+## Go Programs
+### Compile & Execute
+> go run [program.go]
+### Compile
+> go build [program.go]
+> go build -o [bindary_name] [program.go]

@@ -216,3 +216,20 @@
 - 'init()' function is where all the package initialization logic is implemented
 - there can be more than one 'init()' function in a package
 - packages can be nested (sub folders)
+### 3rd Party modules
+- to install
+    - > go get [module_path]  (downloaded in the GOPATH/pkg folder)
+- to update the go.mod file
+    - > go mod tidy
+- to download the dependencies documented in the go.mod file
+    - > go mod download
+- to localize the dependencies
+    - > go mod vendor
+- to install a module as a binary (command line tool) (in the GOPATH/bin folder)
+    - > go install [module_path]
+- to get the dependency graph of all the dependencies
+    - > go mod graph
+- to get the dependency graph of a particular module
+    - > go mod why [module_path]
+### Module command reference
+    - https://go.dev/ref/mod

@@ -188,3 +188,4 @@
 - "copy()" to create a new copy of the slice (with underlying array)
 ![image](./images/slices.png)
 ### Map
+- Typed collection of key/value pairs

@@ -33,6 +33,7 @@ func main() {
 	ApplyDiscount(&pen, 10)
 	fmt.Println(FormatProduct(pen))
 
+	p1 := Product{Id: 100, Name: "Pencil", Cost: 5}
 	p2 := Product{Id: 100, Name: "Pencil", Cost: 5}
 	fmt.Printf("&p1 = %p\n", &p1)
 	fmt.Printf("&p2 = %p\n", &p2)

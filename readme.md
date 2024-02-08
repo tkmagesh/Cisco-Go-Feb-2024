@@ -181,4 +181,10 @@
 - Fixed size typed collection
 - Memory is allocated and initialized (with zero value of the underlying type) in the declaration itself
 ### Slice
+- Varying sized typed collection
+- Pointer to an underlying array
+- "len()" returns the size of the slice
+- "append()" can be used to add new items to the slice
+- "copy()" to create a new copy of the slice (with underlying array)
+![image](./images/slices.png)
 ### Map

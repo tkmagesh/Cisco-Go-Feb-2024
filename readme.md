@@ -157,3 +157,11 @@
 ## Deferred Functions
 - functions whose execution is postponed (until the current function execution is completed)
 - prefix "defer" before the function call
+
+## Errors
+- Errors are values that are returned from a function
+- Error objects implement "error" interface
+    - with an "Error()" method
+- Creation
+    - errors.New()
+    - fmt.Errorf()

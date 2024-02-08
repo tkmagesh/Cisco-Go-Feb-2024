@@ -175,3 +175,10 @@
 ## Pointers
 - an address of data in the memory
 - typed
+
+## Collections
+### Array
+- Fixed size typed collection
+- Memory is allocated and initialized (with zero value of the underlying type) in the declaration itself
+### Slice
+### Map

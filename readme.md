@@ -233,3 +233,6 @@
     - > go mod why [module_path]
 ### Module command reference
     - https://go.dev/ref/mod
+
+## Structs
+- User defined type (like class in Java)

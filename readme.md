@@ -165,3 +165,9 @@
 - Creation
     - errors.New()
     - fmt.Errorf()
+
+## Panic
+- A state of the application where the application execution cannot proceed further
+- The application exits when a panic occurs (by default) with status code (2)
+- Use "panic()" to programmatically create a panic
+- Use "recover()" to know if any panic occurred

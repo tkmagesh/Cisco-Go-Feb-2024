@@ -14,7 +14,7 @@ func main() {
 		fmt.Println("Operation successful")
 		return
 	}
-	fmt.Println(err)
+	fmt.Printf("type : %T\n value : %v\n", err, err)
 	if errors.Is(err, ErrF1) {
 		fmt.Println("f1 error occurred")
 	}
@@ -25,6 +25,12 @@ func main() {
 
 func f1() error {
 	f2Err := f2()
+	/*
+		if f2Err != nil {
+			return ErrF1
+		}
+		return nil
+	*/
 	return fmt.Errorf("%w, %w", ErrF1, f2Err)
 }
 

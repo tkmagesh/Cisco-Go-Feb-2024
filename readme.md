@@ -171,3 +171,7 @@
 - The application exits when a panic occurs (by default) with status code (2)
 - Use "panic()" to programmatically create a panic
 - Use "recover()" to know if any panic occurred
+
+## Pointers
+- an address of data in the memory
+- typed

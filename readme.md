@@ -189,3 +189,30 @@
 ![image](./images/slices.png)
 ### Map
 - Typed collection of key/value pairs
+
+## Modularization
+### Module
+- Any code that need to be versioned and deployed together 
+- typcially a folder with "go.mod" file
+- go.mod file
+    - module name
+        - repo path (recommended)
+    - go runtime version 
+    - references to 3rd modules used in the application
+- Create a go.mod file
+    - > go mod init [module_name]
+- To run a module
+    - > go run .
+- To build a module
+    - > go build .
+    - > go build -o [binary_name] .
+
+### Package
+- internal organization of a module
+- typically a folder
+- the package name becomes the identity for all the code across all the files in a package folder
+- importing a package doesn't involve files
+- types whose name start with uppercase are 'public' to the package
+- 'init()' function is where all the package initialization logic is implemented
+- there can be more than one 'init()' function in a package
+- packages can be nested (sub folders)

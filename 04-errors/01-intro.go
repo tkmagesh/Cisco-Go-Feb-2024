@@ -20,15 +20,15 @@ func main() {
 		}
 	*/
 
-	// err = ErrDivideByZero
+	err = ErrDivideByZero
 	// err = ErrFileOpen
-	err = errors.New("dummy error")
+	// err = errors.New("dummy error")
 	if err == nil {
 		fmt.Println("All good!")
 	} else if err == ErrFileOpen {
-		fmt.Println("error opening the file")
+		fmt.Println("file error :", err.Error())
 	} else if err == ErrDivideByZero {
-		fmt.Println("divide by zero error")
+		fmt.Println("arithmatic operation error:", err.Error())
 	} else {
 		fmt.Printf("Unknown error, error : %s\n", err.Error())
 	}

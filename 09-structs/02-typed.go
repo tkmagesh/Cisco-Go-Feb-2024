@@ -40,10 +40,21 @@ func main() {
 	fmt.Println("p1 == p2 ?", p1 == p2)
 }
 
+// factory function
+func NewProduct(id int, name string, cost float32) *Product {
+	newProduct := &Product{
+		Id : id,
+		Name : name,
+		Cost : cost
+	}
+	return newProduct
+}
+
 func FormatProduct(product Product) string {
 	return fmt.Sprintf("Id = %d, Name = %q, Cost = %0.2f", product.Id, product.Name, product.Cost)
 }
 
-func ApplyDiscount(product *Product, discountPercentage float32) {
-	product.Cost = product.Cost * ((100 - discountPercentage) / 100)
+func ApplyDiscount(productPtr *Product, discountPercentage float32) {
+	// attributes can be accessed using the "." notation even with a pointer
+	productPtr.Cost = productPtr.Cost * ((100 - discountPercentage) / 100)
 }

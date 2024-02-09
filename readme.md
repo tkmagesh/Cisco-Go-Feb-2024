@@ -236,3 +236,4 @@
 
 ## Structs
 - User defined type (like class in Java)
+- No constructor methods, but use factory functions

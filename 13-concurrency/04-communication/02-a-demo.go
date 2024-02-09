@@ -16,13 +16,13 @@ func main() {
 	wg := &sync.WaitGroup{}
 	wg.Add(1)
 	go add(wg, ch, 100, 200)
-	wg.Wait()
 	result := <-ch
+	wg.Wait()
 	fmt.Println(result)
 }
 
 func add(wg *sync.WaitGroup, ch chan int, x, y int) {
-	defer wg.Done()
 	result := x + y
 	ch <- result
+	wg.Done()
 }

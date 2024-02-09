@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type Product struct {
-	Id   int
+	id   int
 	Name string
 	Cost float32
 }

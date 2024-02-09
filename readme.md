@@ -250,3 +250,8 @@
 - Implementation first & contract next is possible
     - It is possible to define contracts for types that you don't own
 - Interfaces can be composed (like structs)
+
+## Concurrency
+- WaitGroup
+    - semaphore based counter
+    - capable of blocking the current function until the counter becomes 0

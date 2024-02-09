@@ -243,3 +243,10 @@
 - the receiver can be value / pointer
 - The methods can be invoked with value OR pointer (irrespective of the value OR pointer receiver )
 - The method definition should be in the same package as that of the struct definition
+
+## Interfaces
+- Used to define contracts
+- Interfaces are implemented "implicitly"
+- Implementation first & contract next is possible
+    - It is possible to define contracts for types that you don't own
+- Interfaces can be composed (like structs)

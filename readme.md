@@ -259,3 +259,25 @@
     - > go run --race [filename.go]
     - > go build --race [filename.go]
     - Note: DO NOT create a production build with race detector
+### Channels
+- data type used for communication between goroutines
+- declaration
+    - > var [var_name] chan [data_type]
+    - > ex: var ch chan int
+- initialization
+    - > [var_name] = make(chan [data_type])
+    - > ex: ch = make(chan int)
+- operation
+    - using channel operator ( <- )
+    - send operation
+        - > [chan_var] <- [data]
+        - > ex: ch <- 100
+    - receive operation
+        - > <- [chan_var]
+        - > ex: <-ch
+- behaviors
+    - receive operation
+        - is a blocking operation (conditions apply)
+        - is blocked until the data becomes available in the channel
+
+![image](./images/channel-behaviors.png)

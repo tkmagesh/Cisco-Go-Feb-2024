@@ -237,3 +237,9 @@
 ## Structs
 - User defined type (like class in Java)
 - No constructor methods, but use factory functions
+
+## Method
+- Function with a receiver
+- the receiver can be value / pointer
+- The methods can be invoked with value OR pointer (irrespective of the value OR pointer receiver )
+- The method definition should be in the same package as that of the struct definition

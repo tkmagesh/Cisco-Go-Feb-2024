@@ -255,3 +255,7 @@
 - WaitGroup
     - semaphore based counter
     - capable of blocking the current function until the counter becomes 0
+- To detect data race
+    - > go run --race [filename.go]
+    - > go build --race [filename.go]
+    - Note: DO NOT create a production build with race detector
